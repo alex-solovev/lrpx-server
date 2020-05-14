@@ -1,0 +1,21 @@
+version: "2"
+services:
+  node-server:
+    build: ./server
+    ports:
+      - 4000:4000
+    links:
+      - mongo
+    volumes:
+      - ./server:/home/app
+    restart: always
+
+  mongo:
+    env_file: ./server/.env
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh:ro
+      - ./data/db:/data/db

@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "alexsolovev",
+    "airbnb-typescript/base",
+    "prettier/@typescript-eslint"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "rules": {
+    "indent": ["off"],
+    "@typescript-eslint/indent": ["off"]
+  }
+}

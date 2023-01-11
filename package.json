@@ -14,7 +14,7 @@
     "@nexus/schema": "^0.13.1",
     "apollo-server-express": "^2.12.0",
     "bcryptjs": "^2.4.3",
-    "class-validator": "^0.12.2",
+    "class-validator": "^0.14.0",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
     "eslint-config-alexsolovev": "^0.0.1",
